@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Study Assistant</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<main class="container">
+
+    <h1>AI Study Assistant</h1>
+
+    <p class="subtitle">
+        Use AI to support your learning instead of replacing your work.
+    </p>
+
+    <section class="card">
+
+        <h2>What do you need help with?</h2>
+
+        <select id="helpType">
+            <option value="brainstorm">Brainstorm</option>
+            <option value="explain">Explain It</option>
+            <option value="writing">Writing Help</option>
+            <option value="study">Study Questions</option>
+        </select>
+
+        <label for="studentInput">
+            Enter your question or idea
+        </label>
+
+        <textarea
+                id="studentInput"
+                placeholder="Type your question or idea here..."
+                rows="7"
+        ></textarea>
+
+        <button id="askButton" type="button">
+            Ask for Help
+        </button>
+
+    </section>
+
+    <section class="card">
+
+        <h2>AI Response</h2>
+
+        <div id="response" class="response-box">
+            Your response will appear here.
+        </div>
+
+    </section>
+
+    <section class="integrity">
+
+        <h3>Academic Integrity Reminder</h3>
+
+        <p>
+            Use AI to understand, brainstorm, study, and improve
+            your own work. AI should support your learning instead
+            of completing assignments for you.
+        </p>
+
+    </section>
+
+</main>
+
+<!-- JavaScript that makes the Ask for Help button work -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

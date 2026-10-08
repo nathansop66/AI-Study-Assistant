@@ -1,0 +1,35 @@
+# Python virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Mac system files
+.DS_Store
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+
+# Python test/coverage files
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+
+# OS/editor temporary files
+*.swp
+*.swo
+*~
